@@ -38,3 +38,4 @@ gem 'simplecov', require: false, group: :test
 gem 'webmock', group: :test
 # Mocking and stubbing library with JMock/SchMock syntax
 gem 'mocha', group: :test
+gem 'tzinfo-data'
