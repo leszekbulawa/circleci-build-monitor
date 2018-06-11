@@ -44,6 +44,13 @@ Only the projects specified in this file will be displayed on the monitor, all o
 
 To keep the monitor up to date, it will repeatedly poll the CircleCI servers every 30 seconds. You can change the number of seconds between refreshes using the `POLL_RATE` environment variable.
 
+## Running in docker
+
+```
+docker build -t circleci_build_monitor .
+docker run -e CIRCLECI_TOKEN=<circleci_api_token> -p <choose_port>:3000 circleci_build_monitor
+```
+
 ## Testing
 
 Run the unit tests
